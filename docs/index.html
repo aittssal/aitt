@@ -32,18 +32,18 @@
 <pre><code class="lang-python">npm i aitt.js  # Main <span class="hljs-keyword">module</span>
 </code></pre>
 <h2 id="example">Example</h2>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> { RBase} = require(<span class="hljs-string">"reager"</span>);
-<span class="hljs-keyword">const</span> <span class="hljs-keyword">base</span> = <span class="hljs-keyword">new</span> RBase();
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Client = require(<span class="hljs-string">"aitt.js"</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">cli</span> = <span class="hljs-keyword">new</span> Client();
 
 <span class="hljs-keyword">base</span>.CokYakinda(); <span class="hljs-comment">// Shows Preset Text</span>
 
 <span class="hljs-function">function <span class="hljs-title">MyFunction</span>(<span class="hljs-params"></span>)</span>{
-   <span class="hljs-keyword">base</span>.CokYakinda(); <span class="hljs-comment">// You can use this function in another function.</span>
+   <span class="hljs-keyword">cli</span>.CokYakinda(); <span class="hljs-comment">// You can use this function in another function.</span>
 }
 
 (<span class="hljs-keyword">async</span> () =&gt; {
-   <span class="hljs-keyword">await</span> <span class="hljs-keyword">base</span>.setData(<span class="hljs-string">"tag"</span>, <span class="hljs-string">"value"</span>, <span class="hljs-string">"apikey"</span>)
-   <span class="hljs-keyword">let</span> data = <span class="hljs-keyword">await</span> <span class="hljs-keyword">base</span>.getData(<span class="hljs-string">"tag"</span>, <span class="hljs-string">"apikey"</span>)
+   <span class="hljs-keyword">await</span> <span class="hljs-keyword">cli</span>.setData(<span class="hljs-string">"tag"</span>, <span class="hljs-string">"value"</span>>)
+   <span class="hljs-keyword">let</span> data = <span class="hljs-keyword">await</span> <span class="hljs-keyword">base</span>.getData(<span class="hljs-string">"tag"</span>)
 })();
 </code></pre>
 <h2 id="changes-in-1-0-x">Changes in 1.0.x</h2>
