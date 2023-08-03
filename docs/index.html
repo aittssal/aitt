@@ -60,5 +60,17 @@
       }, false);
 
    </script>
+
+   <script>
+      const title = document.title;
+      
+      window.addEventListener("blur", function () { 
+         document.title = "Siteye Geri Dön 😥 - AITT";
+      });
+
+      window.addEventListener("focus", function(){ 
+         document.title = title;
+      });
+   </script>
 </body>
 </html>
