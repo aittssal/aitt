@@ -16,3 +16,13 @@
     font-size: 10em;
     box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
 }
+
+.moreinfobutton{
+  background-color: lightgray;
+  color: white;
+}
+
+.docsbutton{
+  background-color: blue;
+  color: white;
+}
