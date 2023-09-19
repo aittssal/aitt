@@ -18,6 +18,7 @@
 	--grid-gap: 2vw;
 	--grid-columns: 4;
 	--grid-inner-scale: 1;
+	overflow: hidden;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
 	font-variation-settings: "ital" 0, "wght" 300;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
 }
 
 /* Page Loader */
