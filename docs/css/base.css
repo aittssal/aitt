@@ -18,7 +18,6 @@
 	--grid-gap: 2vw;
 	--grid-columns: 4;
 	--grid-inner-scale: 1;
-	overflow: hidden;
 }
 
 body {
